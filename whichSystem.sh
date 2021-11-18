@@ -25,12 +25,12 @@ echo -e "\n${grayColour}El TTL es: ${yellowColour}$ttl\n"
 
 
 # Comprobamos el valor del TTL y lo mostramos
-if [ $ttl == "64" ]
+if [[ "$ttl" =~ ^(64|63|65)$ ]]
 then
 	echo -e "  ${redColour}[+] ${grayColour}Linux"
 fi
 
-if [ $ttl == "128" ]
+if [[ "$ttl" =~ ^(128|127|129)$ ]]
 then
 	echo -e "  ${redColour}[+] ${grayColour}Windows"
 fi
