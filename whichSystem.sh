@@ -1,6 +1,5 @@
-#!/usr/bin/bash
-
-# Herramienta desarrolada por RiJaba1 https://github.com/rijaba1
+#!/bin/bash
+# Herramienta desarrolada por RiJaba1 https://github.com/rijaba1/
 
 
 # Declaramos los colores
@@ -13,7 +12,20 @@ clear
 
 # Definimos la IP
 
-read -rep $'\n - Inserte la IP: ' ip
+# [0-9,]+[^.]
+
+re='[0-9,]+[^.]'
+
+while :
+do
+	read -rep $'\n - Inserte la IP: ' ip
+	if [[ $ip =~ $re ]];then
+		break
+	else
+		clear
+		echo -e " - $ip no es una IP."
+	fi
+done
 
 clear
 
