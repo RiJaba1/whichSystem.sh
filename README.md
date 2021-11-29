@@ -15,7 +15,7 @@ sudo chmod +x whichSystem.sh
 
 # English 
 ## What is this utility for?
-This utility is used to **identify** the **operating system** of an **IP**, using the *TTL  provided by the `ping` command.
+This utility is used to **identify** the **operating system** of an **IP**, using the *TTL*  provided by the `ping` command.
 
 ## Installation
 ```bash
