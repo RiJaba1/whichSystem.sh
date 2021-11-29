@@ -1,4 +1,4 @@
-# Herramienta/Tool whichSyetem.sh
+# Herramienta/Tool whichSystem.sh
 
 # Español
 ## ¿Para qué sirve esta utilidad?
