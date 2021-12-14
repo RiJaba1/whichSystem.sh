@@ -8,11 +8,7 @@ declare -r redColour="\e[0;31m\033[1m"
 declare -r grayColour="\e[0;37m\033[1m"
 declare -r blueColour="\e[0;34m\033[1m"
 
-clear
-
 # Definimos la IP
-
-# [0-9,]+[^.]
 
 re='[0-9,]+[^.]'
 
@@ -26,8 +22,6 @@ do
 		echo -e " - $ip no es una IP."
 	fi
 done
-
-clear
 
 # Comprobamos el TTL
 ttl=$(ping -c 1 $ip | awk '{ print $6 }' | tr -d '\n' | cut -c 7- | rev | cut -c3- | rev)
